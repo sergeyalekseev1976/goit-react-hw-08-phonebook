@@ -23,7 +23,7 @@ export const CloseBtn = styled.button`
   padding: 10px;
   background-color: transparent;
   cursor: pointer;
-  color: #8f9eb2;
+  color: #000000;
   border: none;
   border-radius: 50px;
   transition: color 300ms ease-in-out;

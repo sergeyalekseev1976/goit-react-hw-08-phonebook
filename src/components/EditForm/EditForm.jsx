@@ -5,7 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { Form, Label, FormBtn, FormWrap } from './EditForm.styled';
 import toast from 'react-hot-toast';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const schema = yup
   .object({
@@ -72,9 +72,9 @@ export const EditForm = ({ id, name, number, onClose }) => {
   );
 };
 
-// EditForm.propTypes = {
-//   id: PropTypes.string.isRequired,
-//   name: PropTypes.string.isRequired,
-//   number: PropTypes.string.isRequired,
-//   onClose: PropTypes.func,
-// };
+EditForm.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+  onClose: PropTypes.func,
+};

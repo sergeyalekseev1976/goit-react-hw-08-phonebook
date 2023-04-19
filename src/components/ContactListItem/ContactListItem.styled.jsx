@@ -53,8 +53,9 @@ export const Avatar = styled.p`
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  background-color: #0afc0a;
+  background-color: #091fe9;
   border-radius: 50px;
+  font-size: 20px;
   width: 40px;
   height: 40px;
   border: none;

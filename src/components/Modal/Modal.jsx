@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Overlay, ModalContent, CloseBtn } from './Modal.styled';
 import { BsXLg } from 'react-icons/bs';
 
@@ -38,7 +38,7 @@ export const Modal = ({ onClose, children }) => {
   );
 };
 
-// Modal.propTypes = {
-//   onClose: PropTypes.func.isRequired,
-//   children: PropTypes.node.isRequired,
-// };
+Modal.propTypes = {
+  onClose: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
+};
