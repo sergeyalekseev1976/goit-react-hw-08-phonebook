@@ -7,7 +7,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import toast from 'react-hot-toast';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const schema = yup
   .object({
@@ -79,6 +79,6 @@ export const ContactForm = ({ onClose }) => {
   );
 };
 
-// ContactForm.propTypes = {
-//   onClose: PropTypes.func,
-// };
+ContactForm.propTypes = {
+  onClose: PropTypes.func,
+};

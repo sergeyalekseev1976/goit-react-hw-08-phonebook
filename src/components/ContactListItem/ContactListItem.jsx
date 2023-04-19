@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { deleteContact } from 'redux/contacts/operations';
 import { Modal } from 'components/Modal/Modal';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import {
   Item,
   ContactName,
@@ -56,8 +56,8 @@ export const ContactListItem = ({ id, name, number }) => {
   );
 };
 
-// ContactListItem.propTypes = {
-//   id: PropTypes.string.isRequired,
-//   name: PropTypes.string.isRequired,
-//   number: PropTypes.string.isRequired,
-// };
+ContactListItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+};
